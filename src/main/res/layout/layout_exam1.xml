@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pug" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#129765"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:text="You're inv-ited!"
+        android:textColor="@android:color/white"
+        android:textSize="35sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:background="#129765"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp"
+
+        android:text="Bonfire a yhe beach"
+        android:textColor="@android:color/white"
+        android:textSize="15dp" />
+
+</LinearLayout>
