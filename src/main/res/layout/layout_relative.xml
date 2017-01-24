@@ -1,31 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
-        android:layout_alignParentEnd="true"
+        android:id="@+id/hello_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:background="#38cd0f"
-        android:text="Hello"
-        android:textSize="35sp"/>
-
+        android:text="수원스마트"
+        android:textSize="20sp" />
 
     <TextView
-        android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/hello_text"
+        android:text="왼쪽"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/hello_text"
+        android:text="오른쪽"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/hyunseok_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
         android:background="#a2ab30"
         android:text="유현석"
-        android:textSize="35sp"/>
+        android:textSize="20sp" />
 
     <TextView
-        android:layout_alignParentTop="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@id/hyunseok_text"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:text="위쪽"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/hyunseok_text"
+        android:text="왼쪽"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/suwon_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:background="#ff8080"
         android:text="수원"
-        android:textSize="35sp"/>
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/suwon_text"
+        android:text="위쪽"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/suwon_text"
+        android:text="오른쪽"
+        android:textSize="20sp" />
+
 
 </RelativeLayout>
